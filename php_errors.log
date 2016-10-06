@@ -1,0 +1,6 @@
+[13-Sep-2016 21:04:05 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/ubuntu/workspace/wp-content/themes/phenovista-2016/functions.php on line 23
+[13-Sep-2016 21:04:05 UTC] PHP Stack trace:
+[13-Sep-2016 21:04:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Sep-2016 21:04:05 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[13-Sep-2016 21:04:05 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:39
+[13-Sep-2016 21:04:05 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92

@@ -1,0 +1,579 @@
+/*
+Theme Name: Phenovista 2016
+Version: 1.0
+*/
+
+/*************************
+    GENERAL
+*************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+* a {
+    color: #BFBFBF;
+    text-decoration: none;
+}
+
+* a:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.375em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-plus {
+    margin-right: 15px;
+}
+
+.admin-bar .navbar-fixed-top {
+    margin-top: 30px;
+}
+
+.divider {
+    background-color: #3A3A3A;
+    height: 50px;
+}
+
+.section-divider {
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-divider-icon {
+    z-index: 50;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -18px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: transparent;
+}
+
+.no-list-style li {
+    list-style: none;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -115px;
+    visibility: hidden;
+}
+
+/*************************
+    GOOGLE SEARCH BAR
+*************************/
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+    margin-top: -10px !important;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+    height: 26px !important;
+    margin-top: 5px !important;
+    margin-left: -10px !important;
+    min-width: 13px !important;
+    padding: 5px 26px !important;
+    width: 68px !important;
+    border-color: transparent !important;
+    background-color: #777
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+    background-color: #777 !important;
+}
+
+/*************************
+    NAVIGATION
+*************************/
+
+.navbar-brand {
+    position: absolute;
+    top: 20px;
+    padding: 0;
+}
+
+.navbar-inverse {
+    /*background-color: #222;*/
+    /*border-color: #222;*/
+    background-color: #E3E3E1;
+    border-color: #E3E3E1;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.sub-menu a {
+    /*color: #9d9d9d;*/
+    color: #222;
+}
+
+.current-menu-item>a,
+.navbar-inverse .navbar-nav>li>a:hover,
+.sub-menu li:hover,
+.sub-menu > .current-menu-item,
+.menu-item>li>a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/***** Dropdown styling *****/
+
+@media (max-width:768px) {
+    .sub-menu a {
+        margin-left: 25px;
+    }
+}
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		/*background-color: #222;*/
+		background: #E3E3E1;
+		padding: 10px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu {
+    padding: 0;
+}
+
+.sub-menu li {
+    margin: 0;
+	list-style: none;
+	padding: 10px;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;	
+}	
+
+.current-menu-item > a, 
+.current-menu-parent > a {
+	color: #fff !important;
+}
+
+/***** Social Media Links *****/
+
+.social-links {
+    padding-top: 10px;
+    text-align: right;
+}
+.social-links .fa {
+    margin-right: 5px;
+    font-size: 1.3em;
+}
+
+.social-links a {
+    color: #7f7f7f;
+}
+
+.social-links a:hover {
+    color: #3A3A3A;
+}
+
+
+.carousel {
+    margin-top: 0;
+}
+
+/*************************
+    FRONT PAGE LAYOUT
+*************************/
+
+.carousel,
+.carousel .item,
+.carousel-inner > .item > .slide-img {
+    height: 100vh;
+    width: 100%;
+}
+.carousel-caption {
+    padding-bottom: 30px;
+    top: 30%;
+}
+.carousel-indicators {
+    bottom: 35px;
+}
+
+.carousel-caption p,
+.carousel-caption a {
+    text-align: left;
+    color: #111;
+    text-shadow: none;
+}
+
+.headline-1,
+.headline-2 {
+    width: 300px;
+    font-size: 1em;
+    padding: 15px;
+    background-color: rgba(179, 178, 178, 0.6);
+}
+.headline-2 {
+    position: absolute;
+    right: 0;
+}
+
+.first-slide {
+    background: url("img/slider-img-1.jpg") center center no-repeat rgba(0, 0, 0, .25);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.second-slide {
+    background: url("img/slider-img-2.jpg") center center no-repeat rgba(0, 0, 0, .25);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.third-slide {
+    background: url("img/slider-img-3.jpg") center center no-repeat rgba(0, 0, 0, .25);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.fourth-slide {
+    background: url("img/slider-img-4.jpg") center center no-repeat rgba(0, 0, 0, .25);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.fifth-slide {
+    background: url("img/slider-img-5.jpg") center center no-repeat rgba(0, 0, 0, .25);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#explore {
+    background: url("img/valley-wallpaper.jpg") center center no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 50px 30px;
+    color: #fff;
+}
+
+#experience {
+    background-color: #3A3A3A;
+    color: #fff;
+    padding: 50px 30px;
+}
+
+.panel-group,
+.panel-group .panel,
+.panel-default>.panel-heading {
+    background-color: transparent;
+    color: #fff;
+}
+
+.panel-default {
+    border-color: transparent;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+     border-top: 1px solid transparent; 
+}
+
+/*************************
+    DEFAULT PAGE LAYOUT
+*************************/
+
+.jumbotron {
+    background: center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 85vh;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.jumbotron .headline {
+    width: 300px;
+    padding: 15px;
+    background-color: rgba(179, 178, 178, 0.9);
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+
+.jumbotron p,
+.jumbotron a {
+    color: #111;
+    font-size: 1em;
+}
+
+.feature-section {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #3A3A3A;
+    color: #fff;
+}
+
+.feature {
+    text-align: left;
+}
+
+.feature h1 {
+    text-align: center;
+}
+
+.feature .col-md-6 {
+    margin-bottom: 15px;
+}
+
+.table-center th {
+    text-align: center;
+}
+
+.table-center td {
+    text-align: center;
+}
+
+.table-center td:first-child {
+    text-align: left;
+}
+
+.feature .no-pad {
+    padding-left: 0;
+}
+
+.pad20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.margin-20 {
+    margin-bottom: 20px;
+}
+
+/*************************
+    SERVICES
+*************************/
+
+.services-grid {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.services-grid-1 {
+    background: url("https://phenovista-wp-theme-vandepool.c9users.io//wp-content/uploads/2016/09/turnstile.jpg") center center no-repeat rgba(0, 0, 0, .65);
+    background-size: cover;
+}
+.services-grid-2 {
+    background: url("https://phenovista-wp-theme-vandepool.c9users.io//wp-content/uploads/2016/09/blue-circuit-board.jpg") center center no-repeat rgba(0, 0, 0, .65);
+    background-size: cover;
+}
+.services-grid-3 {
+    background: url("https://phenovista-wp-theme-vandepool.c9users.io//wp-content/uploads/2016/09/smolderingwood.jpg") center center no-repeat rgba(0, 0, 0, .65);
+    background-size: cover;
+}
+.services-grid-4 {
+    background: url("https://phenovista-wp-theme-vandepool.c9users.io//wp-content/uploads/2016/09/img_1347.jpg") center center no-repeat rgba(0, 0, 0, .65);
+    background-size: cover;
+}
+.services-grid-5 {
+    background: url("https://phenovista-wp-theme-vandepool.c9users.io//wp-content/uploads/2016/09/vmax_day_2009_engine_cutaway_side.jpg") center center no-repeat rgba(0, 0, 0, .65);
+    background-size: cover;
+}
+.services-grid-6 {
+    background: url("https://phenovista-wp-theme-vandepool.c9users.io//wp-content/uploads/2016/09/back052.jpg") center center no-repeat rgba(0, 0, 0, .65);
+    background-size: cover;
+}
+.services-grid p {
+    margin-top: 40%;
+    letter-spacing: .5em;
+}
+
+
+
+
+/*************************
+    CONTACT
+*************************/
+
+.main-form-input {
+    padding: 20px; 
+    background-color: #606060; 
+    border-radius: 0; 
+    border-color: transparent;
+    color: #fff;
+}
+
+.main-form-btn {
+    width: 100%; 
+    background-color: #606060; 
+    color: #fff;
+}
+
+.contact-info {
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+
+/*************************
+    FOOTER
+*************************/
+
+footer {
+    background-color: #7f7f7f;
+    padding: 50px 30px;
+}
+footer a {
+    color: #ddd;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*************************
+    MEDIA QUERIES
+*************************/
+
+@media screen and (max-width: 1035px) {
+    .headline-2 {
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 995px) {
+    .gsc-control-searchbox-only.gsc-control-searchbox-only-en {
+        margin-top: 50px;
+    }
+    .carousel-caption,
+    .jumbotron .headline {
+        top: 50%;
+    }
+    .jumbotron {
+        height: 100vh;
+    }
+    .tech-center {
+        text-align: center;
+    }
+    .contact-form {
+        margin-top: 150px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .services-grid {
+        left: 25%;
+    }
+    .services-grid p {
+        margin-top: 0;
+        padding-top: 30%;
+    }
+    .navbar-brand>img {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .navbar-brand>img {
+        padding: 15px;
+    }
+    .social-links {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .social-links .fa {
+        margin-right: 15px;
+        font-size: 1.5em;
+    }
+    .gsc-control-searchbox-only.gsc-control-searchbox-only-en {
+        margin-top: 10px;
+    }
+    .navbar-fixed-top {
+        position: relative;
+        margin-bottom: 0;
+    }
+    .jumbotron {
+        margin-top: 0;
+        height: 80vh;
+    }
+     .carousel-caption{
+        top: 10%;
+    }
+    .contact-form {
+        margin-top: 0 !important;
+        padding-top: 30px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .services-grid {
+        left: 10%;
+    }
+    .carousel-caption,
+    .jumbotron .headline {
+        left: 5%;
+    }
+    h1 {
+        font-size: 1.5em;
+        letter-spacing: 0;
+    }
+    .jumbotron,
+    .jumbotron .headline {
+        max-width: 100%;
+    }
+}    
+
+@media only screen and (max-device-width: 750px) and (orientation: landscape) {
+    .navbar-fixed-top {
+        position: relative;
+        margin-bottom: 0;
+    }
+    .jumbotron {
+        margin-top: 0px;
+        height: 420px;
+    }
+    .jumbotron .headline {
+        top: 75%;
+    }
+    .carousel, .carousel .item, .carousel-inner > .item > .slide-img {
+        height: 450px;
+    }
+    .carousel-caption {
+        top: 10%;
+    }
+    .contact-form {
+        margin-top: 0 !important;
+        padding-top: 30px !important;
+    }
+}
